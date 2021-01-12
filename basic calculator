@@ -1,0 +1,39 @@
+print("Hi, I am Deep Thought, your personal bot")
+users_name = input("Who am I helping today? ")
+print("Welcome " + users_name)
+while True:
+    phrase = input("What kind of maths do you want to do? ")
+    if phrase == "multiply" or phrase == "multiplication":
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 * number2
+        output = str(result)
+        print (input1 + " * " + input2 + " = " + output)
+    elif phrase == "add" or phrase == "addition":
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 + number2
+        output = str(result)
+        print (input1 + " + " + input2 + " = " + output)
+    elif phrase == "subtract" or phrase == "takeaway" or phrase == "take away" or phrase == "take-away":
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 - number2
+        output = str(result)
+        print (input1 + " - " + input2 + " = " + output)
+    elif phrase == "divide":
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 / number2
+        output = str(result)
+        print (input1 + " / " + input2 + " = " + output)
+    else:
+        print("sorry i cant " + phrase)
